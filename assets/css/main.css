@@ -39,12 +39,56 @@ ol, ul {
 
 /* Extra styles by EH */
 
-span.logo{
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.gallery .image,
+.gallery img {
+	height: 100%;
 }
+
+span.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding: 10px;
+}
+
+.logo img {
+	max-width: 100%;
+}
+
+.logo.charisma img {
+	max-height: 225px;
+}
+
+.logo.kcl {
+	padding: 40px;
+}
+
+.logo.kcl img {
+	max-height: 165px;
+}
+
+.items.style3 {
+	margin: 0 !important;
+	padding: 1rem 0;
+}
+
+.items.style3 .image {
+	margin-bottom: 1rem;
+}
+
+.style1 .image.fit {
+	margin-bottom: 0;
+}
+
+/*.spotlight .image img {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   height: auto;
+   margin-top: -50%;
+}*/
 
 blockquote, q {
 	quotes: none;
@@ -2675,7 +2719,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit img {
+		.image.fit img {
 				width: 100%;
 			}
 
@@ -4902,23 +4946,27 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
-			.spotlight.style1 .image img {
-				-moz-object-fit: cover;
-				-webkit-object-fit: cover;
-				-ms-object-fit: cover;
-				object-fit: cover;
-				-moz-object-position: center;
-				-webkit-object-position: center;
-				-ms-object-position: center;
-				object-position: center;
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border-radius: 0;
-			}
+		.spotlight.style1 .image img {
+			width: 100%;
+		}
+
+		.spotlight.style1 .image img {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -5808,9 +5856,9 @@ input, select, textarea {
 			object-position: right;
 		}
 
-	.spotlight .image {
+/*	.spotlight .image {
 		background-color: rgba(0, 0, 0, 0.125);
-	}
+	}*/
 
 	.spotlight.invert .image {
 		background-color: rgba(255, 255, 255, 0.125);
@@ -6891,6 +6939,7 @@ input, select, textarea {
 					display: block;
 					width: 100%;
 					border-radius: 0;
+					object-fit: cover;
 				}
 
 			.gallery.style2 article .caption {
