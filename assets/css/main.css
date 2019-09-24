@@ -81,6 +81,10 @@ span.logo {
 	margin-bottom: 0;
 }
 
+.underlined {
+	text-decoration: underline;
+}
+
 /*.spotlight .image img {
    position: absolute;
    top: 50%;
